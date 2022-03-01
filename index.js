@@ -2,7 +2,6 @@ import { WebSocketServer } from 'ws';
 const wss = new WebSocketServer({port:6969});
 
 let shouldSendStart = false;
-let lastState = {};
 let clients = [];
 
 wss.on('connection', ws =>
@@ -30,15 +29,10 @@ wss.on('connection', ws =>
         {
             shouldSendStart = true;
         }
-
-        if (packetBuffer.type == 'ping')
-        {
-            // ws.send(JSON.stringify(lastPacketBuffer));
-        }
     });
 
+    // Debug shit
     setTimeout(() => {
         ws.send('start');
     }, 1000);
-
 });
