@@ -1,0 +1,40 @@
+body {
+    color: #ec4c56;
+    font-family: Roboto;
+    background-color: #242933;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.header {
+    color: #242933;
+    background-color: #ec4c56;
+    width: 100%;
+    margin: 0;
+    height: 2rem;
+    display: flex;
+}
+
+#label {
+    display: inline-block;
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+#playback {
+    width: 100%;
+}
+
+button {
+    background-color: #ec4c56;
+    color: #242933;
+    border: 0px;
+    font-size: 1rem;
+    margin-top: .6rem;
+}
